@@ -1,0 +1,16 @@
+doctype html    
+html 
+    head 
+        title #{title}
+    body 
+    h2 #{title} 
+
+    form(action="/search" method='GET')
+        input(type="text"  placeholder='username' name='search' id='search')
+        button(type='submit') search 
+
+    p #{usernames}
+    a(href="/delete/confirm")  Delete All Usernames
+    br
+    br
+    a(href="/new") Create New Username 

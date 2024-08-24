@@ -1,0 +1,13 @@
+doctype html    
+html 
+    head 
+        title #{title}
+    body 
+    
+    h2 #{title}
+    form(action="/new" method="POST")
+        label(for="username") username: 
+            input(type="text" name='username' id='username' required)  
+            button(type='submit') submit
+    br
+    a(href="/") Back to home 
